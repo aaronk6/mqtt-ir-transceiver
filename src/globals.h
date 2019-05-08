@@ -14,22 +14,12 @@
 
 #define VERSION "0.10"
 
-#ifdef DEBUG
- // dev device (wemos)
-#define RECV_PIN 13    // D7 - GPIO13
-#define TRANS_PIN 14   // D5 - GPIO14
+// dev device (wemos)
+#define RECV_PIN D4    // D4 - GPIO2
+#define TRANS_PIN D3   // D3 - GPIO0
 #define TRIGGER_PIN 15 // D8 - GPIO15
-#define LED_PIN 2      // D4 - GPIO2
+// #define LED_PIN 2      // D4 - GPIO2
 #define BUTTON_ACTIVE_LEVEL HIGH
-
-#else
- // production device - ESP01
-#define RECV_PIN 0    // D3 - GPIO0 - IR detector/demodulator
-#define TRANS_PIN 3   // RX - GPIO3 - IR LED trasmitter
-#define TRIGGER_PIN 2 // D4 - GPIO2 - trigger reset (press and hold after boot - 5 seconds)
-//#define LED_PIN 1      // D4 - GPIO2
-#define BUTTON_ACTIVE_LEVEL LOW
-#endif
 
 #define   TRANSMITTER_FREQ 38
 
