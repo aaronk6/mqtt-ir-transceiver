@@ -228,7 +228,6 @@ void setup(void)
   }
 
   sendToDebug(String("*IR: Connected to ")+String (WiFi.SSID())+"\n");
-  sendToDebug(String("*IR: IP address: ")+String(WiFi.localIP())+"\n");
 
   clientName += "IRGW-";
   uint8_t mac[6];
